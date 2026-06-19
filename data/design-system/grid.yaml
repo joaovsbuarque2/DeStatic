@@ -1,4 +1,4 @@
-# StaticPrime Design System — Grid & Breakpoints
+# DeStatic Design System — Grid & Breakpoints
 breakpoints:
   sm: "640px"
   md: "768px"

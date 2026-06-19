@@ -1,4 +1,4 @@
-// StaticPrime Main
+// DeStatic Main
 // ──────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -13,11 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
 function initThemeToggle() {
   const toggle = document.querySelector('.theme-toggle');
   const html = document.documentElement;
-  const stored = localStorage.getItem('staticprime-theme') || 'system';
+  const stored = localStorage.getItem('DeStatic-theme') || 'system';
 
   const applyTheme = (theme) => {
     html.setAttribute('data-theme', theme);
-    localStorage.setItem('staticprime-theme', theme);
+    localStorage.setItem('DeStatic-theme', theme);
     const icon = toggle?.querySelector('.theme-icon');
     if (!icon) return;
     if (theme === 'dark') icon.textContent = '☀️';

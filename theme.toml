@@ -1,17 +1,18 @@
-name = "StaticPrime"
-license = "Commercial"
-licensename = "Commercial"
-description = "Premium Hugo Starter for SaaS, Fintech & Web3"
-homepage = "https://staticprime.com"
-tags = ["saas", "fintech", "web3", "crypto", "premium", "enterprise", "modern", "dark-mode"]
-features = ["design-system", "seo", "accessibility", "cms", "dark-light", "i18n", "animations"]
+name = "DeStatic"
+license = "MIT"
+licensename = "MIT"
+description = "A premium Hugo theme for SaaS, Fintech & Web3 institutional one-page sites with dark/light mode, design system, and CMS"
+homepage = "https://github.com/seu-usuario/DeStatic"
+demosite = "https://destatic-demo.netlify.app"
+tags = ["saas", "fintech", "web3", "crypto", "modern", "dark-mode", "one-page", "startup", "responsive", "minimal"]
+features = ["design-system", "seo", "accessibility", "cms", "dark-light", "i18n", "animations", "responsive", "blog", "contact-form"]
 min_version = "0.120.0"
 
 [author]
-  name = "StaticPrime"
-  homepage = "https://staticprime.com"
+  name = "Seu Nome"
+  homepage = "https://github.com/seu-usuario"
 
 [original]
-  name = "StaticPrime"
-  homepage = "https://staticprime.com"
-  repo = "https://github.com/staticprime/staticprime"
+  name = "DeStatic"
+  homepage = "https://github.com/seu-usuario/DeStatic"
+  repo = "https://github.com/seu-usuario/DeStatic"

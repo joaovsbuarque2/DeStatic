@@ -1,0 +1,6 @@
+baseURL: "https://destatic-demo.netlify.app"
+build:
+  writeStats: true
+minify:
+  disableXML: true
+  minifyOutput: true

@@ -1,7 +1,7 @@
 /* TEAM */
-Developer: StaticPrime Team
-Twitter: @staticprime
-GitHub: github.com/staticprime
+Developer: DeStatic Team
+Twitter: @DeStatic
+GitHub: github.com/DeStatic
 
 /* THANKS */
 Built with Hugo

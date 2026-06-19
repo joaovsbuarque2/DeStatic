@@ -1,4 +1,4 @@
-# StaticPrime Design System — Motion Tokens
+# DeStatic Design System — Motion Tokens
 durations:
   fast: "150ms"
   normal: "250ms"

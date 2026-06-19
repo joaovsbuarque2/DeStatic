@@ -23,11 +23,11 @@ main:
 social:
   - identifier: "twitter"
     name: "X"
-    url: "https://x.com/staticprime"
+    url: "https://x.com/destatic"
     weight: 10
   - identifier: "github"
     name: "GitHub"
-    url: "https://github.com/staticprime"
+    url: "https://github.com/destatic"
     weight: 20
 
 footer:

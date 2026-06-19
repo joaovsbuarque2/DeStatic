@@ -40,18 +40,18 @@
 .header-logo {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
-  font-family: var(--font-display);
-  font-weight: var(--weight-bold);
-  font-size: var(--text-h4);
   z-index: var(--z-overlay);
   text-decoration: none;
   color: var(--color-text-primary);
 }
 
-.header-logo img {
-  height: 2rem;
-  width: auto;
+.header-logo svg {
+  display: block;
+  transition: transform var(--duration-normal) var(--ease-spring);
+}
+
+.header-logo:hover svg {
+  transform: scale(1.05) rotate(-2deg);
 }
 
 .header-nav {

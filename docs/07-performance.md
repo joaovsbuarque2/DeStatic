@@ -1,6 +1,6 @@
 # Performance
 
-StaticPrime is optimized for:
+DeStatic is optimized for:
 
 - **Lighthouse ≥ 95/100**
 - **CLS < 0.1**

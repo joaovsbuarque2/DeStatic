@@ -6,7 +6,7 @@ cta_early_access: "Early Access"
 
 # Hero
 hero_badge: "Now in Early Access"
-hero_title: "The Future of<br><span class=\"gradient-text\">Decentralized Finance</span>"
+hero_title: "The Future of <span class=\"gradient-text\">Decentralized Finance</span>"
 hero_subtitle: "Built for speed. Designed for trust. The most intuitive platform to manage, trade, and grow your digital assets across multiple chains."
 hero_cta_primary: "Get Early Access"
 hero_cta_secondary: "See How It Works"

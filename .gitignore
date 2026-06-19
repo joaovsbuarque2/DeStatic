@@ -1,6 +1,19 @@
+# Hugo
 public/
 resources/
-node_modules/
 .hugo_build.lock
-*.log
+hugo_stats.json
+
+# Node
+node_modules/
+
+# OS
 .DS_Store
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Example site (user copies what they need)
+exampleSite/node_modules/

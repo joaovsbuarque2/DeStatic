@@ -1,4 +1,4 @@
-# Decap CMS Configuration for StaticPrime
+# Decap CMS Configuration for DeStatic
 backend:
   name: git-gateway
   branch: main

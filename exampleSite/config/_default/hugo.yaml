@@ -1,13 +1,9 @@
 baseURL: "/"
-title: "StaticPrime"
+title: "DeStatic"
 defaultContentLanguage: "en"
-
+theme: "DeStatic"
 
 enableRobotsTXT: true
-canonifyURLs: true
-
-build:
-  writeStats: true
 
 languages:
   en:

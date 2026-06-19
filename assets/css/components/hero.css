@@ -82,6 +82,14 @@
 
 .hero-title {
   margin-bottom: var(--space-6);
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: clamp(2rem, 12vw, 3rem);
+  }
 }
 
 .hero-subtitle {

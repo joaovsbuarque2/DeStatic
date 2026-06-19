@@ -2,7 +2,7 @@
 
 ## Decap CMS (Recommended)
 
-StaticPrime includes pre-configured Decap CMS integration.
+DeStatic includes pre-configured Decap CMS integration.
 
 ### Setup
 

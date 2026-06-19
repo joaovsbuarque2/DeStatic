@@ -10,7 +10,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/staticprime.git my-site
+git clone https://github.com/yourusername/DeStatic.git my-site
 cd my-site
 
 # Install dependencies
@@ -25,7 +25,7 @@ Your site will be available at `http://localhost:1313`.
 ## Project Structure
 
 ```
-staticprime/
+DeStatic/
 ├── assets/          # CSS and JavaScript
 │   ├── css/         # Stylesheets
 │   └── js/          # JavaScript

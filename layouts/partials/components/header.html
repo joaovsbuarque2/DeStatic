@@ -1,11 +1,16 @@
 <header class="header" role="banner">
   <div class="header-inner">
     <a href="{{ .Site.BaseURL }}" class="header-logo" aria-label="{{ .Site.Title }}">
-      <picture>
-        <source srcset="{{ .Site.Params.brand.logoDark | absURL }}" media="(prefers-color-scheme: dark)">
-        <img src="{{ .Site.Params.brand.logo | absURL }}" alt="{{ .Site.Title }}" width="32" height="32">
-      </picture>
-      {{ .Site.Params.brand.name }}
+      <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="100" height="100" rx="24" fill="url(#logo-gradient)"/>
+        <text x="50" y="68" font-family="system-ui" font-size="50" font-weight="800" fill="white" text-anchor="middle">D</text>
+        <defs>
+          <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#8b5cf6"/>
+            <stop offset="100%" stop-color="#06b6d4"/>
+          </linearGradient>
+        </defs>
+      </svg>
     </a>
 
     <nav class="header-nav" role="navigation" aria-label="{{ T "main_navigation" | default "Main navigation" }}">

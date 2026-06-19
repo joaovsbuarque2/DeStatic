@@ -1,0 +1,65 @@
+brand:
+  name: "DeStatic"
+  tagline: "Build Premium Sites"
+  description: "Enterprise-grade Hugo starter for premium SaaS sites"
+  logo: "/images/logo.svg"
+  logoDark: "/images/logo-dark.svg"
+  favicon: "/favicon/favicon.ico"
+
+defaultTheme: "system"
+allowThemeToggle: true
+
+sections:
+  - id: "hero"
+    enabled: true
+  - id: "vision"
+    enabled: true
+  - id: "product"
+    enabled: true
+  - id: "roadmap"
+    enabled: true
+  - id: "traction"
+    enabled: true
+  - id: "team"
+    enabled: true
+  - id: "cta"
+    enabled: true
+
+seo:
+  twitterSite: "@destatic"
+  twitterCreator: "@destatic"
+  ogLocale: "en_US"
+  ogImage: "/images/og-default.jpg"
+  ogImageWidth: 1200
+  ogImageHeight: 630
+  themeColor: "#0a0a0a"
+
+contact:
+  email: "hello@destatic.dev"
+  formAction: "/api/contact"
+
+social:
+  twitter: "https://x.com/destatic"
+  github: "https://github.com/destatic"
+
+footer:
+  columns:
+    - title: "Product"
+      links:
+        - label: "Features"
+          url: "#features"
+        - label: "Pricing"
+          url: "#pricing"
+    - title: "Company"
+      links:
+        - label: "About"
+          url: "/about"
+        - label: "Blog"
+          url: "/blog"
+    - title: "Legal"
+      links:
+        - label: "Privacy"
+          url: "/privacy"
+        - label: "Terms"
+          url: "/terms"
+  copyright: "© 2025 DeStatic. All rights reserved."
