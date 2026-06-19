@@ -4,8 +4,6 @@
 
 Dark/light mode, design system, CMS, i18n, SEO, accessibility — all included.
 
-![DeStatic Screenshot](images/screenshot.png)
-
 ## Quick Start (as a theme)
 
 ```bash
