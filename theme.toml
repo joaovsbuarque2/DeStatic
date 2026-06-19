@@ -1,5 +1,6 @@
 name = "DeStatic"
 license = "MIT"
+licenselink = "https://github.com/joaovsbuarque2/DeStatic/blob/main/LICENSE"
 licensename = "MIT"
 description = "A premium Hugo theme for SaaS, Fintech & Web3 institutional one-page sites with dark/light mode, design system, and CMS"
 homepage = "https://github.com/joaovsbuarque2/DeStatic"

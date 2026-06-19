@@ -8,7 +8,7 @@ Dark/light mode, design system, CMS, i18n, SEO, accessibility — all included.
 
 ```bash
 # In your Hugo site directory
-git submodule add https://github.com/seu-usuario/DeStatic themes/DeStatic
+git submodule add https://github.com/joaovsbuarque2/DeStatic themes/DeStatic
 echo 'theme = "DeStatic"' >> hugo.toml
 ```
 
@@ -32,21 +32,12 @@ npm run dev
 - **CMS** — Decap CMS pre-configured
 - **Fully configurable** — Change all content via `data/homepage.yaml`
 
-## Submitting to Hugo Themes Gallery
+## Submit to Hugo Themes Gallery
 
-1. Push this repo to GitHub (public).
-2. Go to [github.com/gohugoio/hugoThemes](https://github.com/gohugoio/hugoThemes).
-3. Fork the repo, add your theme to `themes.txt`, and submit a PR.
-4. Or use the automated tool: `npx hugo-theme-builder` (recommended).
+Open an issue at [github.com/gohugoio/hugoThemes/issues/new](https://github.com/gohugoio/hugoThemes/issues/new) with:
 
-**Requirements:**
-- Public GitHub repo with `theme.toml` in root
-- `images/screenshot.png` (1300×900) and `images/tn.png` (900×600)
-- MIT license (or compatible)
-
-## Submitting to gohugothemes.com
-
-Go to [gohugothemes.com/submit](https://www.gohugothemes.com/submit/) and fill out the form with your repo URL.
+- Title: `Add DeStatic theme`
+- Body: link to this repository (`https://github.com/joaovsbuarque2/DeStatic`)
 
 ## Structure
 
