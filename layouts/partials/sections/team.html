@@ -1,0 +1,36 @@
+<section class="section" id="team" aria-labelledby="team-title">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <div class="section-label">
+        <span class="section-label-dot" aria-hidden="true"></span>
+        {{ T "team_label" | default "Our Team" }}
+      </div>
+      <h2 class="display-m section-title" id="team-title">
+        {{ T "team_title" | default "Meet the founders" }}
+      </h2>
+      <p class="section-subtitle">
+        {{ T "team_subtitle" | default "Experienced builders from top fintech and Web3 companies." }}
+      </p>
+    </div>
+
+    <div class="team-grid">
+      {{ range $i, $item := hugo.Data.homepage.team }}
+      <article class="card team-card animate-on-scroll" data-delay="{{ mul $i 100 }}">
+        <img class="team-avatar" src="{{ .avatar }}" alt="{{ .name }}" width="96" height="96" loading="lazy">
+        <h3 class="team-name">{{ .name }}</h3>
+        <div class="team-role">{{ .role }}</div>
+        <p class="team-bio">{{ .bio }}</p>
+        {{ with .social }}
+        <div class="team-social">
+          {{ range . }}
+          <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .name }}">
+            {{ if eq .name "X" }}𝕏{{ else if eq .name "LinkedIn" }}in{{ else }}{{ .name }}{{ end }}
+          </a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>

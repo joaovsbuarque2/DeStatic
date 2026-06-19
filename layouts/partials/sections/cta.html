@@ -1,0 +1,22 @@
+<section class="section cta-section" id="cta" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="cta-card animate-on-scroll">
+      <div class="cta-content">
+        <h2 class="display-m section-title" id="cta-title">
+          {{ T "cta_title" | default "Ready to build the future<br>of finance?" | safeHTML }}
+        </h2>
+        <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">
+          {{ T "cta_subtitle" | default "Join the waitlist for early access and be among the first to experience the next evolution in decentralized finance." }}
+        </p>
+        <div class="cta-actions">
+          <a href="{{ .Site.Params.contact.calendly | default "#" }}" class="btn btn-lg">
+            {{ T "cta_primary" | default "Get Early Access" }}
+          </a>
+          <a href="mailto:{{ .Site.Params.contact.email }}" class="btn btn-secondary btn-lg">
+            {{ T "cta_secondary" | default "Contact Us" }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

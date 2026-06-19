@@ -1,0 +1,35 @@
+<section class="section section-bg-gradient" id="traction" aria-labelledby="traction-title">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <div class="section-label">
+        <span class="section-label-dot" aria-hidden="true"></span>
+        {{ T "traction_label" | default "Why Now" }}
+      </div>
+      <h2 class="display-m section-title" id="traction-title">
+        {{ T "traction_title" | default "The numbers speak for themselves" }}
+      </h2>
+      <p class="section-subtitle">
+        {{ T "traction_subtitle" | default "Backed by data, built for scale." }}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-4">
+      {{ range $i, $item := hugo.Data.homepage.traction }}
+      <div class="card card-glow animate-on-scroll text-center" data-delay="{{ mul $i 100 }}">
+        <div class="card-number" data-count-to="{{ .value }}" data-count-suffix="{{ .suffix }}">0</div>
+        <div class="card-title h4">{{ .label }}</div>
+        <p class="card-text body-sm">{{ .description }}</p>
+      </div>
+      {{ end }}
+    </div>
+
+    {{ with hugo.Data.homepage.partners }}
+    <div class="section-divider" aria-hidden="true"></div>
+    <div class="flex items-center justify-center gap-10 animate-on-scroll" style="flex-wrap: wrap; padding-top: var(--space-12); opacity: 0.6;">
+      {{ range . }}
+      <img src="{{ .logo }}" alt="{{ .name }}" height="32" loading="lazy" style="height: 2rem; width: auto;">
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>

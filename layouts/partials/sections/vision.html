@@ -1,0 +1,26 @@
+<section class="section" id="vision" aria-labelledby="vision-title">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <div class="section-label">
+        <span class="section-label-dot" aria-hidden="true"></span>
+        {{ T "vision_label" | default "The Problem" }}
+      </div>
+      <h2 class="display-m section-title" id="vision-title">
+        {{ T "vision_title" | default "Why current platforms<br>are failing you" | safeHTML }}
+      </h2>
+      <p class="section-subtitle">
+        {{ T "vision_subtitle" | default "Most DeFi platforms prioritize complexity over usability. We believe in a different approach." }}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-3">
+      {{ range $i, $item := hugo.Data.homepage.vision }}
+      <article class="card card-glow animate-on-scroll" data-delay="{{ mul $i 100 }}">
+        <div class="card-icon" aria-hidden="true">{{ .icon | safeHTML }}</div>
+        <h3 class="card-title">{{ .title }}</h3>
+        <p class="card-text">{{ .text }}</p>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>

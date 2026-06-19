@@ -1,0 +1,12 @@
+/* TEAM */
+Developer: StaticPrime Team
+Twitter: @staticprime
+GitHub: github.com/staticprime
+
+/* THANKS */
+Built with Hugo
+
+/* SITE */
+Language: English
+Standards: HTML5, CSS3
+Components: WCAG AA

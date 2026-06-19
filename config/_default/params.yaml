@@ -1,0 +1,130 @@
+# StaticPrime Paramètres
+# ──────────────────
+# Core brand settings
+brand:
+  name: "StaticPrime"
+  tagline: "Build Premium Sites"
+  description: "Enterprise-grade Hugo starter for premium SaaS sites"
+  logo: "/images/logo.svg"
+  logoDark: "/images/logo-dark.svg"
+  favicon: "/favicon/favicon.ico"
+
+# Theme: "light" | "dark" | "system"
+defaultTheme: "system"
+allowThemeToggle: true
+
+# Layout
+layout:
+  containerWidth: "1280px"
+  contentWidth: "768px"
+  wideWidth: "1440px"
+
+# Performance
+performance:
+  lazyLoad: true
+  preloadFonts: true
+  preloadHeroImage: true
+  inlineCriticalCSS: true
+
+# Animation
+animation:
+  enabled: true
+  reduceMotion: true
+  revealOffset: 120
+  revealDuration: 600
+
+# SEO defaults
+seo:
+  twitterSite: "@staticprime"
+  twitterCreator: "@staticprime"
+  ogLocale: "en_US"
+  ogImage: "/images/og-default.jpg"
+  ogImageWidth: 1200
+  ogImageHeight: 630
+  themeColor: "#0a0a0a"
+
+# Schema.org
+schema:
+  organization:
+    name: "StaticPrime"
+    url: "https://staticprime.com"
+    logo: "/images/logo.svg"
+    sameAs:
+      - "https://x.com/staticprime"
+      - "https://github.com/staticprime"
+  person:
+    enabled: true
+
+# Homepage sections (ordered)
+sections:
+  - id: "hero"
+    enabled: true
+  - id: "vision"
+    enabled: true
+  - id: "product"
+    enabled: true
+  - id: "roadmap"
+    enabled: true
+  - id: "traction"
+    enabled: true
+  - id: "team"
+    enabled: true
+  - id: "cta"
+    enabled: true
+
+# Blog
+blog:
+  postsPerPage: 6
+  showRelatedPosts: true
+  relatedPostsLimit: 3
+  enableSearch: true
+  enableCategories: true
+  enableTags: true
+
+# Contact
+contact:
+  email: "hello@staticprime.com"
+  phone: ""
+  formAction: "/api/contact"
+  calendly: ""
+
+# Social
+social:
+  twitter: "https://x.com/staticprime"
+  github: "https://github.com/staticprime"
+  linkedin: ""
+  discord: ""
+  youtube: ""
+
+# Footer
+footer:
+  columns:
+    - title: "Product"
+      links:
+        - label: "Features"
+          url: "#features"
+        - label: "Pricing"
+          url: "#pricing"
+        - label: "FAQ"
+          url: "#faq"
+    - title: "Company"
+      links:
+        - label: "About"
+          url: "/about"
+        - label: "Blog"
+          url: "/blog"
+        - label: "Careers"
+          url: "#"
+    - title: "Legal"
+      links:
+        - label: "Privacy"
+          url: "/privacy"
+        - label: "Terms"
+          url: "/terms"
+  copyright: "© 2025 StaticPrime. All rights reserved."
+
+# CMS
+cms:
+  provider: "decap"
+  repo: ""
+  branch: "main"

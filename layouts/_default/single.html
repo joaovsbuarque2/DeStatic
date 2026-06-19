@@ -1,0 +1,31 @@
+{{ define "main" }}
+<article class="section" itemscope itemtype="https://schema.org/Article">
+  <div class="container container-narrow">
+    <header class="animate-on-scroll">
+      {{ with .Params.categories }}
+      <div class="flex gap-2" style="margin-bottom: var(--space-4);">
+        {{ range . }}
+        <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="card-tag">{{ . }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      <h1 class="display-m" itemprop="headline">{{ .Title }}</h1>
+
+      {{ with .Params.author }}
+      <div class="flex items-center gap-4" style="margin-top: var(--space-4); color: var(--color-text-secondary);">
+        <span>{{ T "blog_by" | default "By" }} <strong itemprop="author">{{ . }}</strong></span>
+        <span aria-hidden="true">·</span>
+        <time datetime="{{ $.Date.Format "2006-01-02" }}" itemprop="datePublished">
+          {{ $.Date.Format "Jan 2, 2006" }}
+        </time>
+        {{ with $.ReadingTime }}
+        <span aria-hidden="true">·</span>
+        <span>{{ . }} {{ T "blog_min_read" | default "min read" }}</span>
+        {{ end }}
+      </div>
+      {{ end }}
+    </article>
+  </div>
+</article>
+{{ end }}

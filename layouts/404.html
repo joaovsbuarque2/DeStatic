@@ -1,0 +1,16 @@
+{{ define "main" }}
+<section class="section" style="min-height: 70vh; display: flex; align-items: center;">
+  <div class="container text-center">
+    <div class="animate-on-scroll">
+      <h1 class="display-xl" style="color: var(--color-accent-500);">404</h1>
+      <h2 class="display-m section-title">{{ T "404_title" | default "Page not found" }}</h2>
+      <p class="section-subtitle" style="max-width: 400px; margin-inline: auto; margin-bottom: var(--space-8);">
+        {{ T "404_description" | default "The page you're looking for doesn't exist or has been moved." }}
+      </p>
+      <a href="{{ .Site.BaseURL }}" class="btn btn-primary btn-lg">
+        {{ T "404_cta" | default "Back to Home" }}
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}

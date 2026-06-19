@@ -1,0 +1,39 @@
+<header class="header" role="banner">
+  <div class="header-inner">
+    <a href="{{ .Site.BaseURL }}" class="header-logo" aria-label="{{ .Site.Title }}">
+      <picture>
+        <source srcset="{{ .Site.Params.brand.logoDark | absURL }}" media="(prefers-color-scheme: dark)">
+        <img src="{{ .Site.Params.brand.logo | absURL }}" alt="{{ .Site.Title }}" width="32" height="32">
+      </picture>
+      {{ .Site.Params.brand.name }}
+    </a>
+
+    <nav class="header-nav" role="navigation" aria-label="{{ T "main_navigation" | default "Main navigation" }}">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" {{ if .Identifier }}data-nav="{{ .Identifier }}"{{ end }}>
+          {{ .Name }}
+        </a>
+      {{ end }}
+    </nav>
+
+    <div class="header-actions">
+      {{ if .Site.Params.allowThemeToggle }}
+      <button class="theme-toggle" aria-label="{{ T "toggle_theme" | default "Toggle theme" }}" type="button">
+        <span class="theme-icon" aria-hidden="true">💻</span>
+      </button>
+      {{ end }}
+
+      <a href="{{ with .Site.GetPage "/#cta" }}{{ .RelPermalink }}{{ end }}" class="btn btn-primary btn-sm">
+        {{ T "cta_early_access" | default "Early Access" }}
+      </a>
+
+      <button class="mobile-menu-btn" aria-label="{{ T "toggle_menu" | default "Toggle menu" }}" aria-expanded="false" type="button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>

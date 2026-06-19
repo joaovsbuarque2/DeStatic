@@ -1,0 +1,58 @@
+skip_to_content: "Skip to content"
+main_navigation: "Main navigation"
+toggle_theme: "Toggle theme"
+toggle_menu: "Toggle menu"
+cta_early_access: "Early Access"
+
+# Hero
+hero_badge: "Now in Early Access"
+hero_title: "The Future of<br><span class=\"gradient-text\">Decentralized Finance</span>"
+hero_subtitle: "Built for speed. Designed for trust. The most intuitive platform to manage, trade, and grow your digital assets across multiple chains."
+hero_cta_primary: "Get Early Access"
+hero_cta_secondary: "See How It Works"
+
+# Vision
+vision_label: "The Problem"
+vision_title: "Why current platforms<br>are failing you"
+vision_subtitle: "Most DeFi platforms prioritize complexity over usability. We believe in a different approach."
+
+# Product
+product_label: "The Solution"
+product_title: "Built for the next<br>generation of finance"
+product_subtitle: "Three simple steps to take control of your digital assets."
+
+# Roadmap
+roadmap_label: "Our Journey"
+roadmap_title: "What we're building"
+roadmap_subtitle: "Transparent roadmap of what we've accomplished and what's coming next."
+
+# Traction
+traction_label: "Why Now"
+traction_title: "The numbers speak for themselves"
+traction_subtitle: "Backed by data, built for scale."
+
+# Team
+team_label: "Our Team"
+team_title: "Meet the founders"
+team_subtitle: "Experienced builders from top fintech and Web3 companies."
+
+# CTA
+cta_title: "Ready to build the future<br>of finance?"
+cta_subtitle: "Join the waitlist for early access and be among the first to experience the next evolution in decentralized finance."
+cta_primary: "Get Early Access"
+cta_secondary: "Contact Us"
+
+# Footer
+footer_description: "Building the future of decentralized finance."
+
+# Blog
+blog_read_more: "Read more"
+blog_all_posts: "All posts"
+blog_no_posts: "No posts yet."
+blog_related: "Related posts"
+blog_search: "Search posts..."
+blog_categories: "Categories"
+blog_tags: "Tags"
+blog_by: "By"
+blog_published: "Published on"
+blog_min_read: "min read"

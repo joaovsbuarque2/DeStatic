@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Locale | default "en" }}" data-theme="{{ .Site.Params.defaultTheme | default "system" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+
+  {{- partial "head/seo.html" . }}
+  {{- partial "head/fonts.html" . }}
+  {{- partial "head/icons.html" . }}
+
+  {{ $css := slice }}
+  {{ $css = $css | append (resources.Get "css/base/variables.css") }}
+  {{ $css = $css | append (resources.Get "css/base/reset.css") }}
+  {{ $css = $css | append (resources.Get "css/base/typography.css") }}
+  {{ $css = $css | append (resources.Get "css/base/utilities.css") }}
+  {{ $css = $css | append (resources.Get "css/components/button.css") }}
+  {{ $css = $css | append (resources.Get "css/components/header.css") }}
+  {{ $css = $css | append (resources.Get "css/components/hero.css") }}
+  {{ $css = $css | append (resources.Get "css/components/card.css") }}
+  {{ $css = $css | append (resources.Get "css/components/section.css") }}
+  {{ $css = $css | append (resources.Get "css/components/timeline.css") }}
+  {{ $css = $css | append (resources.Get "css/components/footer.css") }}
+  {{ $css = $css | append (resources.Get "css/components/team.css") }}
+  {{ $css = $css | append (resources.Get "css/components/cta.css") }}
+  {{ $bundle := $css | resources.Concat "css/bundle.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $bundle.RelPermalink }}" integrity="{{ $bundle.Data.Integrity }}" crossorigin="anonymous">
+
+  {{ if .Site.Params.performance.inlineCriticalCSS }}
+  <style>{{ partial "head/critical.css" . | safeCSS }}</style>
+  {{ end }}
+
+  {{ partial "head/schema.html" . }}
+</head>
+<body>
+  <a href="#main-content" class="skip-link">{{ T "skip_to_content" | default "Skip to content" }}</a>
+
+  {{ partial "components/header.html" . }}
+
+  <main id="main-content" role="main">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "components/footer.html" . }}
+
+  {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
+
+  {{ if .Site.Params.analytics.enabled }}
+    {{ partial "head/analytics.html" . }}
+  {{ end }}
+</body>
+</html>

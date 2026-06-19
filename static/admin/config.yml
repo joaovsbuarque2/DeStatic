@@ -1,0 +1,91 @@
+# Decap CMS Configuration for StaticPrime
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "homepage"
+        label: "Homepage"
+        file: "data/homepage.yaml"
+        format: "yaml"
+        fields:
+          - { label: "Stats", name: "stats", widget: "list", fields: [
+              { label: "Label", name: "label", widget: "string" },
+              { label: "Value", name: "value", widget: "number" },
+              { label: "Suffix", name: "suffix", widget: "string", required: false }
+            ]}
+          - { label: "Vision Cards", name: "vision", widget: "list", fields: [
+              { label: "Index", name: "index", widget: "number" },
+              { label: "Icon", name: "icon", widget: "string" },
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Text", name: "text", widget: "text" }
+            ]}
+          - { label: "Product Steps", name: "product", widget: "list", fields: [
+              { label: "Index", name: "index", widget: "number" },
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Text", name: "text", widget: "text" }
+            ]}
+          - { label: "Roadmap Items", name: "roadmap", widget: "list", fields: [
+              { label: "Phase", name: "phase", widget: "string" },
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Text", name: "text", widget: "text" }
+            ]}
+          - { label: "Traction Stats", name: "traction", widget: "list", fields: [
+              { label: "Index", name: "index", widget: "number" },
+              { label: "Value", name: "value", widget: "number" },
+              { label: "Suffix", name: "suffix", widget: "string" },
+              { label: "Label", name: "label", widget: "string" },
+              { label: "Description", name: "description", widget: "text" }
+            ]}
+          - { label: "Team Members", name: "team", widget: "list", fields: [
+              { label: "Index", name: "index", widget: "number" },
+              { label: "Name", name: "name", widget: "string" },
+              { label: "Role", name: "role", widget: "string" },
+              { label: "Bio", name: "bio", widget: "text" },
+              { label: "Avatar", name: "avatar", widget: "image" }
+            ]}
+
+  - name: "blog"
+    label: "Blog"
+    label_singular: "Post"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Categories", name: "categories", widget: "list" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "config"
+    label: "Site Configuration"
+    files:
+      - name: "params"
+        label: "Site Parameters"
+        file: "config/_default/params.yaml"
+        format: "yaml"
+        fields:
+          - { label: "Brand Name", name: "brand", widget: "object", fields: [
+              { label: "Name", name: "name", widget: "string" },
+              { label: "Tagline", name: "tagline", widget: "string" },
+              { label: "Description", name: "description", widget: "text" }
+            ]}
+          - { label: "Social Links", name: "social", widget: "object", fields: [
+              { label: "Twitter", name: "twitter", widget: "string" },
+              { label: "GitHub", name: "github", widget: "string" },
+              { label: "LinkedIn", name: "linkedin", widget: "string" },
+              { label: "Discord", name: "discord", widget: "string" }
+            ]}
+          - { label: "Contact Email", name: "contact", widget: "object", fields: [
+              { label: "Email", name: "email", widget: "string" }
+            ]}

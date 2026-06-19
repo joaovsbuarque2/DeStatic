@@ -1,0 +1,17 @@
+name = "StaticPrime"
+license = "Commercial"
+licensename = "Commercial"
+description = "Premium Hugo Starter for SaaS, Fintech & Web3"
+homepage = "https://staticprime.com"
+tags = ["saas", "fintech", "web3", "crypto", "premium", "enterprise", "modern", "dark-mode"]
+features = ["design-system", "seo", "accessibility", "cms", "dark-light", "i18n", "animations"]
+min_version = "0.120.0"
+
+[author]
+  name = "StaticPrime"
+  homepage = "https://staticprime.com"
+
+[original]
+  name = "StaticPrime"
+  homepage = "https://staticprime.com"
+  repo = "https://github.com/staticprime/staticprime"

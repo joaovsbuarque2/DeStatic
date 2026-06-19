@@ -1,0 +1,40 @@
+<section class="hero section" aria-label="{{ T "hero_title" | default "Hero" }}">
+  <div class="hero-bg">
+    <div class="hero-gradient" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+  </div>
+
+  <div class="hero-content container">
+    <div class="hero-badge animate-on-scroll">
+      <span class="hero-badge-dot" aria-hidden="true"></span>
+      {{ T "hero_badge" | default "Now in Early Access" }}
+    </div>
+
+    <h1 class="display-xl hero-title animate-on-scroll" data-delay="100">
+      {{ T "hero_title" | default "The Future of<br><span class=\"gradient-text\">Decentralized Finance</span>" | safeHTML }}
+    </h1>
+
+    <p class="hero-subtitle animate-on-scroll" data-delay="200">
+      {{ T "hero_subtitle" | default "Built for speed. Designed for trust. The most intuitive platform to manage, trade, and grow your digital assets across multiple chains." }}
+    </p>
+
+    <div class="hero-actions animate-on-scroll" data-delay="300">
+      <a href="#cta" class="btn btn-gradient btn-lg">
+        <span>{{ T "hero_cta_primary" | default "Get Early Access" }}</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="#product" class="btn btn-secondary btn-lg">
+        {{ T "hero_cta_secondary" | default "See How It Works" }}
+      </a>
+    </div>
+
+    <div class="hero-stats animate-on-scroll" data-delay="400">
+      {{ range hugo.Data.homepage.stats }}
+      <div class="hero-stat-item">
+        <div class="hero-stat-number" data-count-to="{{ .value }}" data-count-suffix="{{ .suffix }}">0</div>
+        <div class="hero-stat-label">{{ .label }}</div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

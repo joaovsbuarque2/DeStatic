@@ -1,0 +1,116 @@
+# Homepage Data
+# ──────────────
+# Edit this file to customize all homepage content
+
+stats:
+  - label: "Transactions"
+    value: 2500000
+    suffix: "+"
+  - label: "Active Users"
+    value: 50000
+    suffix: "+"
+  - label: "Chains Supported"
+    value: 12
+    suffix: ""
+  - label: "Total Value Locked"
+    value: 50000000
+    suffix: "+"
+
+vision:
+  - icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>'
+    title: "Too Slow"
+    text: "Transaction confirmation times that don't keep up with modern trading needs."
+  - icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>'
+    title: "Too Complex"
+    text: "Crypto wallets and DeFi platforms that require a computer science degree to navigate."
+  - icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>'
+    title: "Too Expensive"
+    text: "High gas fees and hidden costs eating into your gains with every transaction."
+
+product:
+  - title: "Connect Your Wallet"
+    text: "Link any wallet across 12+ blockchains in seconds. One interface, complete control."
+  - title: "Trade & Manage"
+    text: "Swap, stake, and manage your portfolio with institutional-grade tools, consumer-friendly design."
+  - title: "Scale & Grow"
+    text: "Automated strategies, real-time analytics, and cross-chain optimization at your fingertips."
+
+roadmap:
+  - phase: "Phase 1 — Now"
+    title: "MVP Launch"
+    text: "Core wallet management, token swaps, portfolio tracking across major chains."
+  - phase: "Phase 2 — Q3 2025"
+    title: "Advanced Features"
+    text: "Automated trading strategies, yield optimization, in-app analytics dashboard."
+  - phase: "Phase 3 — Q4 2025"
+    title: "Ecosystem Expansion"
+    text: "Mobile app launch, NFT management, fiat on-ramp, multi-signature vaults."
+  - phase: "Phase 4 — 2026"
+    title: "Platform Maturity"
+    text: "DeFi lending integration, DAO governance, institutional-grade API access."
+
+traction:
+  - value: 50000
+    suffix: "+"
+    label: "Waitlist Signups"
+    description: "Early adopters signed up in first 48 hours"
+  - value: 12
+    suffix: ""
+    label: "Blockchains"
+    description: "Supported at launch with more coming"
+  - value: 25
+    suffix: "M+"
+    label: "Test Transactions"
+    description: "Processed on testnet during beta"
+  - value: 99.9
+    suffix: "%"
+    label: "Uptime"
+    description: "Infrastructure reliability guarantee"
+
+partners:
+  - name: "Partner 1"
+    logo: "/images/partners/partner-1.svg"
+  - name: "Partner 2"
+    logo: "/images/partners/partner-2.svg"
+  - name: "Partner 3"
+    logo: "/images/partners/partner-3.svg"
+  - name: "Partner 4"
+    logo: "/images/partners/partner-4.svg"
+
+team:
+  - name: "Alex Chen"
+    role: "CEO & Co-Founder"
+    bio: "10+ years in fintech. Former VP at Coinbase, built DeFi products serving 2M+ users."
+    avatar: "https://ui-avatars.com/api/?name=Alex+Chen&background=7c3aed&color=fff&size=96"
+    social:
+      - name: "X"
+        url: "https://x.com"
+      - name: "LinkedIn"
+        url: "https://linkedin.com"
+  - name: "Sarah Kim"
+    role: "CTO & Co-Founder"
+    bio: "Ex-Google, ex-Chainlink. PhD in Distributed Systems. Built blockchain infrastructure at scale."
+    avatar: "https://ui-avatars.com/api/?name=Sarah+Kim&background=0891b2&color=fff&size=96"
+    social:
+      - name: "X"
+        url: "https://x.com"
+      - name: "LinkedIn"
+        url: "https://linkedin.com"
+  - name: "Marcus Johnson"
+    role: "CPO"
+    bio: "Led product at MetaMask and Rainbow. Obsessed with making DeFi accessible to everyone."
+    avatar: "https://ui-avatars.com/api/?name=Marcus+Johnson&background=6d28d9&color=fff&size=96"
+    social:
+      - name: "X"
+        url: "https://x.com"
+      - name: "LinkedIn"
+        url: "https://linkedin.com"
+  - name: "Priya Patel"
+    role: "Head of Strategy"
+    bio: "Former McKinsey, DeFi analyst. Advised 10+ unicorns on go-to-market and tokenomics."
+    avatar: "https://ui-avatars.com/api/?name=Priya+Patel&background=0e7490&color=fff&size=96"
+    social:
+      - name: "X"
+        url: "https://x.com"
+      - name: "LinkedIn"
+        url: "https://linkedin.com"

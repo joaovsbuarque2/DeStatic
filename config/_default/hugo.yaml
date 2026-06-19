@@ -1,0 +1,41 @@
+baseURL: "/"
+title: "StaticPrime"
+defaultContentLanguage: "en"
+
+
+enableRobotsTXT: true
+canonifyURLs: true
+
+build:
+  writeStats: true
+
+languages:
+  en:
+    label: "English"
+    weight: 1
+  pt-br:
+    label: "Português"
+    weight: 2
+
+outputs:
+  home:
+    - HTML
+    - RSS
+  section:
+    - HTML
+    - RSS
+
+mediaTypes:
+  application/manifest+json:
+    suffixes:
+      - webmanifest
+
+outputFormats:
+  MANIFEST:
+    mediaType: application/manifest+json
+    baseName: manifest
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.120.0"

@@ -1,0 +1,90 @@
+.cta-section {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 50% at 50% 50%, var(--color-accent-100) 0%, transparent 60%);
+  opacity: 0.5;
+}
+
+[data-theme="dark"] .cta-section::before {
+  background: radial-gradient(ellipse 60% 50% at 50% 50%, var(--color-accent-50) 0%, transparent 60%);
+  opacity: 0.3;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.cta-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-actions .btn {
+    width: 100%;
+  }
+}
+
+.cta-card {
+  background: linear-gradient(135deg, var(--color-accent-500), var(--color-cyan-600));
+  border-radius: var(--radius-2xl);
+  padding: var(--space-12) var(--space-8);
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(255,255,255,0.15) 0%, transparent 60%);
+}
+
+.cta-card * {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-card .btn {
+  background: white;
+  color: var(--color-accent-600);
+  border-color: white;
+}
+
+.cta-card .btn:hover {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+.cta-card .btn-secondary {
+  background: transparent;
+  color: white;
+  border-color: rgba(255,255,255,0.3);
+}
+
+.cta-card .btn-secondary:hover {
+  border-color: white;
+  background: rgba(255,255,255,0.1);
+}

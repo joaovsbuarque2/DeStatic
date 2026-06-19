@@ -1,0 +1,26 @@
+<section class="section section-bg-alt" id="product" aria-labelledby="product-title">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <div class="section-label">
+        <span class="section-label-dot" aria-hidden="true"></span>
+        {{ T "product_label" | default "The Solution" }}
+      </div>
+      <h2 class="display-m section-title" id="product-title">
+        {{ T "product_title" | default "Built for the next<br>generation of finance" | safeHTML }}
+      </h2>
+      <p class="section-subtitle">
+        {{ T "product_subtitle" | default "Three simple steps to take control of your digital assets." }}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-3">
+      {{ range $i, $item := hugo.Data.homepage.product }}
+      <article class="card card-gradient animate-on-scroll" data-delay="{{ mul $i 100 }}">
+        <div class="card-number">{{ printf "%02d" (add $i 1) }}</div>
+        <h3 class="card-title">{{ .title }}</h3>
+        <p class="card-text">{{ .text }}</p>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>

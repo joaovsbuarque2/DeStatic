@@ -1,0 +1,58 @@
+skip_to_content: "Pular para o conteúdo"
+main_navigation: "Navegação principal"
+toggle_theme: "Alternar tema"
+toggle_menu: "Alternar menu"
+cta_early_access: "Acesso Antecipado"
+
+# Hero
+hero_badge: "Agora em Acesso Antecipado"
+hero_title: "O futuro das<br><span class=\"gradient-text\">Finanças Descentralizadas</span>"
+hero_subtitle: "Construído para velocidade. Projetado para confiança. A plataforma mais intuitiva para gerenciar, trocar e fazer seus ativos digitais crescerem em múltiplas blockchains."
+hero_cta_primary: "Obter Acesso Antecipado"
+hero_cta_secondary: "Veja Como Funciona"
+
+# Vision
+vision_label: "O Problema"
+vision_title: "Por que as plataformas atuais<br>estão falhando com você"
+vision_subtitle: "A maioria das plataformas DeFi prioriza complexidade sobre usabilidade. Acreditamos em uma abordagem diferente."
+
+# Product
+product_label: "A Solução"
+product_title: "Construído para a próxima<br>geração das finanças"
+product_subtitle: "Três passos simples para assumir o controle dos seus ativos digitais."
+
+# Roadmap
+roadmap_label: "Nossa Jornada"
+roadmap_title: "O que estamos construindo"
+roadmap_subtitle: "Roadmap transparente do que realizamos e do que está por vir."
+
+# Traction
+traction_label: "Por que Agora"
+traction_title: "Os números falam por si"
+traction_subtitle: "Respaldado por dados, construído para escala."
+
+# Team
+team_label: "Nosso Time"
+team_title: "Conheça os fundadores"
+team_subtitle: "Constructores experientes das maiores empresas de fintech e Web3."
+
+# CTA
+cta_title: "Pronto para construir o futuro<br>das finanças?"
+cta_subtitle: "Entre na lista de espera para acesso antecipado e seja um dos primeiros a experimentar a próxima evolução das finanças descentralizadas."
+cta_primary: "Obter Acesso Antecipado"
+cta_secondary: "Fale Conosco"
+
+# Footer
+footer_description: "Construindo o futuro das finanças descentralizadas."
+
+# Blog
+blog_read_more: "Ler mais"
+blog_all_posts: "Todos os posts"
+blog_no_posts: "Nenhum post ainda."
+blog_related: "Posts relacionados"
+blog_search: "Buscar posts..."
+blog_categories: "Categorias"
+blog_tags: "Tags"
+blog_by: "Por"
+blog_published: "Publicado em"
+blog_min_read: "min de leitura"

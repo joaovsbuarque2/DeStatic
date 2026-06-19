@@ -1,0 +1,26 @@
+{
+  "name": "staticprime",
+  "version": "1.0.0",
+  "description": "Premium Hugo Starter for SaaS, Fintech & Web3",
+  "private": true,
+  "scripts": {
+    "dev": "hugo server -D --disableFastRender",
+    "build": "hugo --minify --gc",
+    "build:prod": "hugo --minify --gc --environment production",
+    "start": "hugo server --disableFastRender --noHTTPCache",
+    "preview": "hugo server --minify --buildDrafts --disableFastRender",
+    "lint": "hugo --gc --templateMetrics",
+    "test": "hugo --gc --quiet && echo 'Build successful'"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "cssnano": "^7.0.6"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "> 0.5%"
+  ]
+}

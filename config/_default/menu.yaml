@@ -1,0 +1,41 @@
+main:
+  - identifier: "product"
+    name: "Product"
+    url: "/#product"
+    weight: 10
+  - identifier: "roadmap"
+    name: "Roadmap"
+    url: "/#roadmap"
+    weight: 20
+  - identifier: "team"
+    name: "Team"
+    url: "/#team"
+    weight: 30
+  - identifier: "blog"
+    name: "Blog"
+    url: "/blog"
+    weight: 40
+  - identifier: "contact"
+    name: "Contact"
+    url: "/#cta"
+    weight: 50
+
+social:
+  - identifier: "twitter"
+    name: "X"
+    url: "https://x.com/staticprime"
+    weight: 10
+  - identifier: "github"
+    name: "GitHub"
+    url: "https://github.com/staticprime"
+    weight: 20
+
+footer:
+  - identifier: "privacy"
+    name: "Privacy"
+    url: "/privacy"
+    weight: 10
+  - identifier: "terms"
+    name: "Terms"
+    url: "/terms"
+    weight: 20

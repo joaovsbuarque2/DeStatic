@@ -1,0 +1,61 @@
+{{ if .Site.Params.performance.preloadFonts }}
+  <!-- Preload fonts -->
+  <link rel="preconnect" href="https://api.fontsource.org" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Syne (Display) -->
+  <link rel="preload" as="style" href="https://api.fontsource.org/v1/fonts/syne/latin-800-normal.woff2" crossorigin>
+  <link rel="preload" as="style" href="https://api.fontsource.org/v1/fonts/syne/latin-700-normal.woff2" crossorigin>
+  <link rel="preload" as="style" href="https://api.fontsource.org/v1/fonts/syne/latin-600-normal.woff2" crossorigin>
+
+  <!-- Sora (Body) -->
+  <link rel="preload" as="style" href="https://api.fontsource.org/v1/fonts/sora/latin-400-normal.woff2" crossorigin>
+  <link rel="preload" as="style" href="https://api.fontsource.org/v1/fonts/sora/latin-500-normal.woff2" crossorigin>
+  <link rel="preload" as="style" href="https://api.fontsource.org/v1/fonts/sora/latin-700-normal.woff2" crossorigin>
+{{ end }}
+
+<!-- Font loading -->
+<style>
+  @font-face {
+    font-family: 'Syne';
+    src: url('https://api.fontsource.org/v1/fonts/syne/latin-800-normal.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Syne';
+    src: url('https://api.fontsource.org/v1/fonts/syne/latin-700-normal.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Syne';
+    src: url('https://api.fontsource.org/v1/fonts/syne/latin-600-normal.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Syne';
+    src: url('https://api.fontsource.org/v1/fonts/syne/latin-400-normal.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Sora';
+    src: url('https://api.fontsource.org/v1/fonts/sora/latin-700-normal.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Sora';
+    src: url('https://api.fontsource.org/v1/fonts/sora/latin-500-normal.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Sora';
+    src: url('https://api.fontsource.org/v1/fonts/sora/latin-400-normal.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+  }
+</style>

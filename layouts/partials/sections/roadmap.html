@@ -1,0 +1,29 @@
+<section class="section" id="roadmap" aria-labelledby="roadmap-title">
+  <div class="container">
+    <div class="section-header section-header-left animate-on-scroll">
+      <div class="section-label">
+        <span class="section-label-dot" aria-hidden="true"></span>
+        {{ T "roadmap_label" | default "Our Journey" }}
+      </div>
+      <h2 class="display-m section-title" id="roadmap-title">
+        {{ T "roadmap_title" | default "What we're building" }}
+      </h2>
+      <p class="section-subtitle">
+        {{ T "roadmap_subtitle" | default "Transparent roadmap of what we've accomplished and what's coming next." }}
+      </p>
+    </div>
+
+    <div class="timeline animate-on-scroll">
+      {{ range $i, $item := hugo.Data.homepage.roadmap }}
+      <div class="timeline-item animate-on-scroll" data-delay="{{ mul $i 150 }}">
+        <div class="timeline-dot" aria-hidden="true"></div>
+        <div class="timeline-content">
+          <span class="timeline-phase">{{ .phase }}</span>
+          <h3 class="timeline-title">{{ .title }}</h3>
+          <p class="timeline-text">{{ .text }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
