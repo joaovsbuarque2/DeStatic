@@ -2,17 +2,17 @@ name = "DeStatic"
 license = "MIT"
 licensename = "MIT"
 description = "A premium Hugo theme for SaaS, Fintech & Web3 institutional one-page sites with dark/light mode, design system, and CMS"
-homepage = "https://github.com/seu-usuario/DeStatic"
-demosite = "https://destatic-demo.netlify.app"
+homepage = "https://github.com/joaovsbuarque2/DeStatic"
+demosite = "https://joaovsbuarque2.github.io/DeStatic/"
 tags = ["saas", "fintech", "web3", "crypto", "modern", "dark-mode", "one-page", "startup", "responsive", "minimal"]
 features = ["design-system", "seo", "accessibility", "cms", "dark-light", "i18n", "animations", "responsive", "blog", "contact-form"]
 min_version = "0.120.0"
 
 [author]
-  name = "Seu Nome"
-  homepage = "https://github.com/seu-usuario"
+  name = "João Buarque"
+  homepage = "https://github.com/joaovsbuarque2"
 
 [original]
   name = "DeStatic"
-  homepage = "https://github.com/seu-usuario/DeStatic"
-  repo = "https://github.com/seu-usuario/DeStatic"
+  homepage = "https://github.com/joaovsbuarque2/DeStatic"
+  repo = "https://github.com/joaovsbuarque2/DeStatic"
