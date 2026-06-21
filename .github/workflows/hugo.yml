@@ -31,7 +31,7 @@ jobs:
 
       - name: Build
         working-directory: ./exampleSite
-        run: hugo --minify --themesDir ../.. --baseURL "https://joaovsbuarque2.github.io/DeStatic/"
+        run: hugo --minify --baseURL "https://joaovsbuarque2.github.io/DeStatic/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
